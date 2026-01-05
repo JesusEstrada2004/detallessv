@@ -5,8 +5,42 @@ import background from '../assets/background.svg';
 
 <div id="container">
 	<img id="background" src={background.src} alt="" fetchpriority="high" />
-</div>
+	<header class="bg-white">
+  <div class="mx-auto flex h-16 max-w-7xl items-center gap-8 px-4 sm:px-6 lg:px-8">
+    <a href="/" class="flex items-center text-teal-600">
+  <span class="sr-only">Home</span>
 
+  <img
+    src="https://res.cloudinary.com/dsri8v8hs/image/upload/v1767567585/detalleslogo_s8tqnx.png"
+    alt="Detalles SV logo"
+    class="h-15 w-12"
+  />
+</a>
+
+    <div class="flex flex-1 items-center justify-end md:justify-between">
+      <nav aria-label="Global" class="hidden md:block">
+        <ul class="flex items-center gap-6 text-sm">
+          <li>
+            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Servicios </a>
+          </li>
+          <li>
+            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Planeacion de eventos </a>
+          </li>
+		  <li>
+            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Acerca de </a>
+          </li>
+          <li>
+            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Blog </a>
+          </li>
+        </ul>
+      </nav>
+
+        
+      </div>
+    </div>
+  </div>
+</header>
+</div>
 <style>
 	#background {
 		position: fixed;
