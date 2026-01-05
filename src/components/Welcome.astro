@@ -1,46 +1,116 @@
 ---
-import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 ---
 
 <div id="container">
-	<img id="background" src={background.src} alt="" fetchpriority="high" />
-	<header class="bg-white">
-  <div class="mx-auto flex h-16 max-w-7xl items-center gap-8 px-4 sm:px-6 lg:px-8">
-    <a href="/" class="flex items-center text-teal-600">
-  <span class="sr-only">Home</span>
-
   <img
-    src="https://res.cloudinary.com/dsri8v8hs/image/upload/v1767567585/detalleslogo_s8tqnx.png"
-    alt="Detalles SV logo"
-    class="h-15 w-12"
+    id="background"
+    src={background.src}
+    alt=""
+    fetchpriority="high"
+    aria-hidden="true"
   />
-</a>
 
-    <div class="flex flex-1 items-center justify-end md:justify-between">
-      <nav aria-label="Global" class="hidden md:block">
-        <ul class="flex items-center gap-6 text-sm">
-          <li>
-            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Servicios </a>
-          </li>
-          <li>
-            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Planeacion de eventos </a>
-          </li>
-		  <li>
-            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Acerca de </a>
-          </li>
-          <li>
-            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Blog </a>
-          </li>
-        </ul>
-      </nav>
+  <header class="relative z-40">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
 
-        
+        <!-- LOGO + BRAND -->
+        <h1 class="flex items-center gap-2">
+          <a href="/" class="flex items-center gap-2 text-teal-600">
+            <span class="sr-only">Detalles SV - Home</span>
+
+            <img
+              src="https://res.cloudinary.com/dsri8v8hs/image/upload/v1767567585/detalleslogo_s8tqnx.png"
+              alt="Detalles SV logo"
+              class="h-10 w-10"
+            />
+
+            <span class="text-lg font-extrabold" style="color: #90EEE4; font-size: e-large;">
+              Detalles SV
+            </span>
+          </a>
+        </h1>
+
+        <!-- NAV DESKTOP -->
+        <nav class="hidden md:block" aria-label="Global">
+          <ul class="flex items-center gap-6 text-sm">
+            <li><a class="text-black-500 hover:text-gray-700" style="color: #90EEE4; font-size: medium;" href="#">Servicios</a></li>
+            <li><a class="text-black-500 hover:text-gray-700" style="color: #90EEE4; font-size: medium;" href="#">Planeacion de eventos</a></li>
+            <li><a class="text-black-500 hover:text-gray-700" style="color: #90EEE4; font-size: medium;" href="#">Blog</a></li>
+            <li><a class="text-black-500 hover:text-gray-700" style="color: #90EEE4; font-size: medium;" href="#">Acerca de</a></li>
+          </ul>
+        </nav>
+
+        <!-- MOBILE BUTTON -->
+        <button
+          id="open-menu"
+          aria-label="Open menu"
+          class="md:hidden rounded-sm bg-gray-100 p-2 text-gray-600 hover:text-gray-800"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
       </div>
     </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+<div
+  id="mobile-menu"  class="fixed inset-0 z-50 bg-white md:hidden translate-x-full transition-transform duration-300 ease-in-out" style="background-color: #FDF3F8;">
+  <div class="flex items-center justify-between px-4 h-16 border-b">
+    <div class="flex items-center gap-2">
+      <img
+        src="https://res.cloudinary.com/dsri8v8hs/image/upload/v1767567585/detalleslogo_s8tqnx.png"
+        alt="Detalles SV logo"
+        class="h-10 w-10"
+      />
+
+      <span class="text-lg font-extrabold text-[#90EEE4]"style="font-size: x-large;">
+        Detalles SV
+      </span>
+    </div>
+
+    <button
+      id="close-menu"
+      aria-label="Close menu"
+      class="p-2 text-gray-600"
+    >
+      ✕
+    </button>
   </div>
-</header>
+
+
+    <nav class="px-4 py-6"style="background-color: #FDF3F8;">
+      <ul class="space-y-4 text-base">
+		<li><a href="#" class="text-black-500 transition hover:text-gray-500/75" style="font-size: x-large;">Servicios</a></li>
+        <li><a href="#" class="text-black-500 transition hover:text-gray-500/75" style="font-size: x-large;">Planeacion de eventos</a></li>
+        <li><a href="#" class="text-black-500 transition hover:text-gray-500/75" style="font-size: x-large;">Blog</a></li>
+        <li><a href="#" class="text-black-500 transition hover:text-gray-500/75" style="font-size: x-large;">Acerca de</a></li>
+      </ul>
+    </nav>
+  </div>
 </div>
+
+<script>
+   const openMenu = document.getElementById('open-menu');
+  const closeMenu = document.getElementById('close-menu');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  openMenu?.addEventListener('click', () => {
+    mobileMenu.classList.remove('translate-x-full');
+  });
+
+  closeMenu?.addEventListener('click', () => {
+    mobileMenu.classList.add('translate-x-full');
+  });
+</script>
+
+
 <style>
 	#background {
 		position: fixed;
