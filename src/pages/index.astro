@@ -18,56 +18,55 @@ import Cards from '../components/Cards.astro'
 
   <QuienesSomos />
 
-  <!-- SECCIÓN DE CARDS -->
-  <section class="bg-gray-100 py-16">
-<<<<<<< HEAD
-  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-6 place-items-center ">
+<!-- SECCIÓN DE CARDS -->
+<section class="bg-gray-100 py-16">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Section Header -->
+    <div class="text-center mb-12 sm:mb-16 px-4">
+      <span class="text-xs sm:text-sm font-semibold tracking-widest uppercase text-detalles-teal">
+        Nuestros Servicios
+      </span>
+
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-gray-900 mt-4">
+        Todo lo que Necesitas para tu Evento
+      </h2>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-6 place-items-center">
       <Cards
         title="Alquiler de Mobiliario"
         description="Información sobre nuestros servicios de alquiler de mobiliario."
         buttonText="Ver servicio"
       />
-=======
-    <div class="max-w-7xl mx-auto">
-      <!-- Section Header -->
-      <div class="text-center mb-12 sm:mb-16 px-4">
-        <span class="text-xs sm:text-sm font-semibold tracking-widest uppercase text-detalles-teal">Nuestros Servicios</span>
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-gray-900 mt-4">
-          Todo lo que Necesitas para tu Evento
-        </h2>
-      </div>
->>>>>>> 6b7ad27d386fb5b11f156481e0ce119759bfb7b4
 
-      <!-- Cards Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
-        <Cards
-          title="Alquiler Mobiliario"
-          description="Información sobre nuestros servicios de alquiler de mobiliario."
-          buttonText="Ver servicio"
-        />
+      <Cards
+        title="Alquiler de Mantelería"
+        description="Información sobre nuestros servicios de alquiler de mantelería."
+        buttonText="Ver servicio"
+      />
 
-        <Cards
-          title="Alquiler de Manteleria"
-          description="Información sobre nuestros servicios de alquiler de mantelería."
-          buttonText="Ver Servicio"
-        />
+      <Cards
+        title="Servicio de Decoración"
+        description="Información sobre nuestros servicios de decoración para eventos."
+        buttonText="Ver servicio"
+      />
 
-        <Cards
-          title="Servicio de Decoracion"
-          description="Informacion nuestros servicios de decoración para eventos."
-          buttonText="Ver Servicio"
-        />
-
-        <Cards
-          title="Planeacion de Eventos"
-          description="Información sobre nuestros servicios de planeación de eventos."
-          buttonText="Ver Servicio"
-        />
-      </div>
+      <Cards
+        title="Planeación de Eventos"
+        description="Información sobre nuestros servicios de planeación de eventos."
+        buttonText="Ver servicio"
+      />
     </div>
-  </section>
-<<<<<<< HEAD
-  <section class="bg-gray-50 py-20">
+
+  </div>
+</section>
+<ComoFunciona />
+
+<RequisitosYPoliticas />
+
+<section class="bg-gray-50 py-20">
   <div class="max-w-4xl mx-auto text-center px-6">
     
     <h2 class="text-3xl md:text-4xl font-semibold mb-4">
@@ -75,7 +74,7 @@ import Cards from '../components/Cards.astro'
     </h2>
 
     <p class="text-gray-600 mb-8">
-      En DETALLESSV te ayudamos a crear eventos únicos con mobiliario,
+      En DETALLES SV te ayudamos a crear eventos únicos con mobiliario,
       mantelería y decoración pensados para cada ocasión.
     </p>
 
@@ -90,12 +89,6 @@ import Cards from '../components/Cards.astro'
   </div>
 </section>
 
-=======
-
-  <ComoFunciona />
-
-  <RequisitosYPoliticas />
->>>>>>> 6b7ad27d386fb5b11f156481e0ce119759bfb7b4
 
   <Footer />
 </Layout>

@@ -4,18 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-<<<<<<< HEAD
         brand: {
           gold: '#C9A24D',
           dark: '#1C1C1C',
           muted: '#F5F5F5',
         },
-      },
-      fontFamily: {
-        serif: ['"Playfair Display"', 'serif'],
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-=======
-        'detalles': {
+        detalles: {
           teal: '#90EEE4',
           'teal-dark': '#5FD4C8',
           pink: '#FDF3F8',
@@ -23,8 +17,8 @@ export default {
         },
       },
       fontFamily: {
-        'display': ['Playfair Display', 'Georgia', 'serif'],
-        'sans': ['Inter', 'system-ui', 'sans-serif'],
+        display: ['"Playfair Display"', 'Georgia', 'serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-out',
@@ -44,14 +38,8 @@ export default {
           '0%': { opacity: '0', transform: 'scale(0.95)' },
           '100%': { opacity: '1', transform: 'scale(1)' },
         },
->>>>>>> 6b7ad27d386fb5b11f156481e0ce119759bfb7b4
       },
     },
   },
   plugins: [],
-<<<<<<< HEAD
-};
-
-=======
 }
->>>>>>> 6b7ad27d386fb5b11f156481e0ce119759bfb7b4
