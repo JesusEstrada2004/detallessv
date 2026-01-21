@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
+<<<<<<< HEAD
         brand: {
           gold: '#C9A24D',
           dark: '#1C1C1C',
@@ -13,9 +14,44 @@ export default {
       fontFamily: {
         serif: ['"Playfair Display"', 'serif'],
         sans: ['Inter', 'system-ui', 'sans-serif'],
+=======
+        'detalles': {
+          teal: '#90EEE4',
+          'teal-dark': '#5FD4C8',
+          pink: '#FDF3F8',
+          'pink-light': '#FCF8FB',
+        },
+      },
+      fontFamily: {
+        'display': ['Playfair Display', 'Georgia', 'serif'],
+        'sans': ['Inter', 'system-ui', 'sans-serif'],
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.6s ease-out',
+        'slide-up': 'slideUp 0.6s ease-out',
+        'scale-in': 'scaleIn 0.4s ease-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        scaleIn: {
+          '0%': { opacity: '0', transform: 'scale(0.95)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        },
+>>>>>>> 6b7ad27d386fb5b11f156481e0ce119759bfb7b4
       },
     },
   },
   plugins: [],
+<<<<<<< HEAD
 };
 
+=======
+}
+>>>>>>> 6b7ad27d386fb5b11f156481e0ce119759bfb7b4
